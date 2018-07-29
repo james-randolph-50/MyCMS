@@ -13,6 +13,7 @@ class SubjectsController < ApplicationController
   end
 
   def create
+    @subject = Subject.new(params[:subject])
   end
 
   def edit
