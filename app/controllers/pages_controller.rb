@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
 
   def index
+    @pages = Page.sorted
   end
 
   def show
@@ -23,5 +24,5 @@ class PagesController < ApplicationController
 
   def destroy
   end
-  
+
 end
