@@ -1,4 +1,5 @@
 class SectionsController < ApplicationController
+
   def index
   end
 
@@ -22,4 +23,5 @@ class SectionsController < ApplicationController
 
   def destroy
   end
+  
 end
