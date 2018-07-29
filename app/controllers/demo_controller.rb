@@ -5,6 +5,10 @@ class DemoController < ApplicationController
   end
 
   def hello
+    
+    @id = params[:id]
+    @page = params[:page]
+    render('hello')
   end
 
   def other_hello
