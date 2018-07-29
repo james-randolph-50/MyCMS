@@ -1,5 +1,7 @@
 class SubjectsController < ApplicationController
+
   def index
+    @subjects = Subject.sorted
   end
 
   def show
@@ -22,4 +24,5 @@ class SubjectsController < ApplicationController
 
   def destroy
   end
+
 end
