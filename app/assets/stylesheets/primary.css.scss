@@ -67,3 +67,46 @@ a:hover {}
     color: $light_brown;
 }
 
+#content { padding: 10px; }
+
+#footer {
+    clear: both;
+    height: 2.5em;
+    text-align: right;
+    background: $light_brown;
+    color: $yellow;
+
+    p {
+        margin: 0;
+        padding: 0.5em 1em;
+    }
+}
+
+#navigation {
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            margin-bottom: 0.5em;
+        }
+        ul {
+            margin: 0.5em 0 0 1em;
+            font-size: 0.9em;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        padding: 1px 3px;
+        &:hover {
+            background: $yellow;
+        }
+    }
+}
+
+#content h2 {
+    color: $light_brown;
+}
+
