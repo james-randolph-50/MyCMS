@@ -4,23 +4,19 @@
                 <td><%= f.text_field(:name) %></td>
             </tr>
             <tr>
-                <th>Page ID</th>
-                <td><%= f.text_field(:page_id) %></td>
+                <th>Subject ID</th>
+                <td><%= f.text_field(:subject_id) %></td>
             </tr>
             <tr>
+                <th>Permalink</th>
+                <td><%= f.text_field(:permalink) %></td>
+            </tr>
+             <tr>
                 <th>Position</th>
                 <td><%= f.text_field(:position) %></td>
             </tr>
              <tr>
                 <th>Visible</th>
-                <td><%= f.text_field(:visible) %></td>
-            </tr>
-             <tr>
-                <th>Content Type</th>
-                <td><%= f.text_field(:content_type) %></td>
-            </tr>
-            <tr>
-                <th>Content</th>
-                <td><%= f.text_field(:content) %></td>
+                <td><%= f.check_box(:visible) %></td>
             </tr>
         </table>
