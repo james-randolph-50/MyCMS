@@ -5,7 +5,15 @@
     </head>
     <body>
 
+    <% if !flash[:notice].blank? %>
+    <div class="notice">
+        <%= flash[:notice] %>
+    </div>
+    <% end %>
+
+    <!--Before Yield -->
     <%= yield %>
+    <!--After Yield -->
 
     </body>
 </html>
