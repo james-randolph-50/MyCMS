@@ -1,7 +1,9 @@
 class DemoController < ApplicationController
 
-  def index
+  layout 'application'
 
+  def index
+    render('index')
   end
 
   def hello
