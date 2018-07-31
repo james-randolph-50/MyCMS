@@ -101,13 +101,13 @@ span.status {
     &.false { background: red; color: red; }
 }
 
-.field-with-errors {
+.field_with-errors {
     label { color: #AA0000; }
-    input { }
+    input { border: 1px solid red; }
 }
 
 #error-explanation {
-    wdith: 400px;
+    width: 400px;
     padding: 0; margin: 0 auto 1.5em;
     border: 1px solid #AA0000;
     background-color: #FFFFFF;
@@ -116,7 +116,7 @@ span.status {
         font-weight: bold;
         font-size: 12px;
         padding: 5px 5px 5px 15px; margin: 0;
-        width: 300px;
+        width: 380px;
         background-color: #AA0000; color: #FFF;
     }
     p {
