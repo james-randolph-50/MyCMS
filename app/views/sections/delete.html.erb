@@ -3,7 +3,7 @@
 <div class="sections delete">
     <h2>Delete section</h2>
 
-    <%= form_for(@section, :method => 'delete') do |f| %>
+    <%= form_for(@section, :page_id => @page.id :method => 'delete') do |f| %>
     <p>Are you sure? This Section will be permanently deleted.</p>
 
     <p class="reference-name"><%= f.object.name %></p>
