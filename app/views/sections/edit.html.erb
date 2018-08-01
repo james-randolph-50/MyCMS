@@ -1,11 +1,11 @@
 <h1>Sections#edit</h1>
 <p>Find me in app/views/sections/edit.html.erb</p>
-a<%= link_to("<< Back", sections_path, :class => 'back-link')%>
+a<%= link_to("<< Back", sections_path(:page_id => @page.id), :class => 'back-link')%>
 
 <div class="sections edit">
     <h2>Update section</h2>
 
-        <%= form_for(@section) do |f| %>
+        <%= form_for(@section, :url => section_path(@section, :page_id => @page.id)) do |f| %>
       
             <%= render(:partial => 'form', :locals => {:f => f}) %>
 
